@@ -20,3 +20,6 @@ You need to setup the environment as an `ipykernel` to use it from the Jupyter n
 Also if you want to support PDF export from jupyter you need to setup LaTeX:
 
 `sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic`
+
+
+.
