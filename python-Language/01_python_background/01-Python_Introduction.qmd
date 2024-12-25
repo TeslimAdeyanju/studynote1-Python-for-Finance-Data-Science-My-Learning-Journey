@@ -1,0 +1,508 @@
+---
+title: Introduction to Pyton
+author: Teslim Adeyanju
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+### Get Started With Python:
+
+##### **1.0 What is Python?**
+
+
+Python is a general-purpose, high-level, interpreted, object-oriented programming language used for various applications. Python was developed by Guido Van Rossum in 1989 while working at National Research Institute in the Netherlands. But officially, Python was made available to the public in 1991.
+
+#### **2.0 Applications of Python**
+---
+
+We can use Python everywhere because Python is known for its general-purpose nature, which makes it applicable in almost every domain of software development. The most common application areas are:
+
+- Desktop Applications
+- Web Applications
+- Database Applications
+- Network Programming
+- Games
+- Data Analysis Applications
+- Machine Learning
+- Artificial Intelligence Applications
+- IoT
+
+#### **3.0 Install Python**
+---
+
+It may be possible that some PCs and Macs will have Python already installed. You can check which version of Python is installed before proceeding to the installation.
+
+Open the command line or terminal and type the below command.
+
+```python
+python --version
+```
+
+##### **4.0 Create and Run Your First Python Program**
+---
+
+We can run Python by using the following three ways
+
+- Run Python Using IDLE
+- Run Python on Command Line
+- Execute Python File
+
+
+
+# 1. Run Python Using IDLE
+---
+
+IDLE is an integrated development environment (IDE) for Python. The Python installer contains the IDLE module by default. Thus, when you install Python, IDLE gets installed automatically.
+
+Go to launchpad (for mac) and start icon (for Windows) and type IDLE, to open it. IDLE is an interactive Python Shell where you can write python commands and get the output instantly.
+
+!https://pynative.com/wp-content/uploads/2021/08/IDLE.jpg
+
+Let’s see how to print ‘hello world’ in Python using IDLE.
+Type `print('Hello, World')` and hit enter. Hello world in Python
+
+!https://pynative.com/wp-content/uploads/2021/08/hello_world_in_python.jpg
+
+IDLE has features like coding hinting, syntax highlighting, checking, etc.
+
+Also, we can create a new file, write Python code, and save it with the `.py` extension. The `.py`is the python file extension which denotes this is the Python script.
+
+2. Run Python on Command Line
+---
+
+We can also run Python on the command line.
+
+- Type `python` command on the command line or terminal to run Python interactively. It will invoke the interpreter in immediate mode.
+- Next, type Python code and press enter to get the output.
+- To exit this mode, type `quit()` and press enter.
+
+Please find the below image for demonstration. Run Python on the command line
+
+!https://pynative.com/wp-content/uploads/2021/08/run_python_on_command_line.jpg
+
+3. Execute Python File**
+---
+
+Python is an interpreted programming language in which we create a code file ( .py with extension) and pass it to the Python interpreter to execute whenever required.
+
+With Python installed in our computer, we can open any `text editor` and type the below code in it, and save it as a `hello.py`. It should noted that the save file must have `.py` for it to be executed by python interpreter.
+
+
+
+#### **5.0 Syntax and Indentation in Python**
+---
+
+- Using Blank Lines in code
+- End-of-Line to Terminate a Statement
+- Semi-column to Separate Multiple Statements
+- Indentation
+
+ **1.0 Using Blank Lines in code**
+
+In Python, a blank line is any line in your code that contains only whitespace (spaces or tabs), or is completely empty. Blank lines are often used to improve the readability of your code by separating sections of code, making it easier for developers to understand and maintain.
+
+Here’s a breakdown of how Python treats blank lines and their purpose:
+
+A blank line can be:
+
+- A line with no characters at all.
+- A line with only spaces or tabs.
+- A line with a comment only.
+
+How Python Handles Blank Lines: Python's interpreter ignores blank lines. They do not affect the execution of your code. This means you can add as many blank lines as you want without changing how your program runs.
+
+Purpose of Blank Lines: Readability: Blank lines help to visually separate different sections of code, making it easier to understand the structure and flow of the program. For example, you might
+
+---
+**2.0 End-of-Line to Terminate a Statement**
+
+- In Python end of the line terminate the statement. So you don’t need to write any symbol to mark the end of the line to indicate the statement termination. For example, in other programming languages like Java and C, the statement must end with a semicolon (`;`).
+- In Python, each statement typically ends with a newline character (`\n`). However, sometimes you may want to write a statement that spans multiple lines for better readability. This can be done using the line continuation character (`\`), which explicitly tells Python that the statement continues on the next line. This is known as explicit line continuation.
+
+Here's a detailed explanation with examples:
+
+- **Explicit Line Continuation**
+
+The backslash (`\`) is used to extend a statement over multiple lines. When a backslash is placed at the end of a line, it indicates that the statement is not complete and continues on the next line.
+
+Example 1: Basic Usage
+
+```python
+pythonCopy code
+total = 1 + 2 + 3 + 4 + \
+        5 + 6 + 7 + 8 + \
+        9 + 10
+
+print(total)  # Output: 55
+
+```
+
+In this example, the statement `total = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10` is too long to fit comfortably on one line, so we use backslashes to break it up.
+
+Example 2: With Function Calls
+
+```python
+pythonCopy code
+result = some_function(param1, param2, param3, \
+                       param4, param5, param6)
+
+print(result)
+```
+
+Here, a function call with many parameters is split across two lines for readability.
+
+**Implicit Line Continuation**
+
+We can use parentheses `()` to write a multi-line statement. We can add a line continuation statement inside it. Whatever we add inside a parentheses `()` will treat as a single statement even it is placed on multiple lines. As you see, we have removed the the line continuation character (`\`) if we are using the parentheses `()`. We can use square brackets `[]` to create a [list](https://pynative.com/python-lists/). Then, if required, we can place each list item on a single line for better readability. Same as square brackets, we can use the curly `{ }` to create a [dictionary](https://pynative.com/python-dictionaries/) with every key-value pair on a new line for better readability.
+
+Example 3: Using Parentheses
+
+```python
+pythonCopy code
+total = (1 + 2 + 3 + 4 +
+         5 + 6 + 7 + 8 +
+         9 + 10)
+
+print(total)  # Output: 55
+
+```
+
+Parentheses naturally allow the expression to be split over multiple lines without using backslashes.
+
+Example 4: Using Brackets for Lists
+
+```python
+pythonCopy code
+numbers = [
+    1, 2, 3, 4,
+    5, 6, 7, 8,
+    9, 10
+]
+
+print(numbers)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+```
+
+Here, the list `numbers` is split over several lines for clarity, without the need for backslashes.
+
+Summary
+
+1. Explicit Line Continuation: Use the backslash (`\`) at the end of a line to continue a statement on the next line.
+2. Implicit Line Continuation: Use parentheses `()`, brackets `[]`, or braces `{}` to span a statement over multiple lines without needing a backslash.
+3. Both methods enhance code readability and maintainability, especially when dealing with long statements or complex expressions.
+
+---
+
+**3.0 Semi-column to Separate Multiple Statements**
+
+In Python, although it is not common practice, you can place multiple statements on a single line by separating them with semicolons (`;`). Each statement is executed sequentially, just as if they were on separate lines.
+
+- Example 1: Multiple Statements on One Line
+
+Here is a simple example where three statements are placed on a single line:
+
+```python
+x = 10; y = 20; z = x + y
+print(x); print(y); print(z)
+```
+
+Explanation:
+
+1. **`x = 10`**: This statement assigns the value `10` to the variable `x`.
+2. **`y = 20`**: This statement assigns the value `20` to the variable `y`.
+3. **`z = x + y`**: This statement calculates the sum of `x` and `y` and assigns it to the variable `z`.
+4. **`print(x)`**: This statement prints the value of `x`.
+5. **`print(y)`**: This statement prints the value of `y`.
+6. **`print(z)`**: This statement prints the value of `z`.
+
+Output:
+
+```
+10
+20
+30
+```
+
+- Example 2: More Complex Example
+
+Here’s an example with different types of statements:
+
+```python
+a = 5; b = 10; if a < b: print('a is less than b'); a += 1; b -= 1; print(a, b)
+```
+
+Explanation:
+
+1. **`a = 5`**: Assigns `5` to `a`.
+2. **`b = 10`**: Assigns `10` to `b`.
+3. **`if a < b: print('a is less than b')`**: This conditional statement checks if `a` is less than `b`. If true, it prints `'a is less than b'`.
+4. **`a += 1`**: Increments `a` by `1`.
+5. **`b -= 1`**: Decrements `b` by `1`.
+6. **`print(a, b)`**: Prints the values of `a` and `b`.
+
+Output:
+
+```python
+a is less than b
+6 9
+```
+
+- Best Practices:
+
+While Python allows multiple statements on a single line, it is generally recommended to avoid this practice for the sake of code readability and maintainability. Code that is easy to read and understand is typically more valuable, especially when working in a team or when returning to code after some time.
+
+- Example of Best Practice:
+
+Instead of writing multiple statements on a single line, you should write them on separate lines:
+
+```python
+a = 5
+b = 10
+if a < b:
+    print('a is less than b')
+a += 1
+b -= 1
+print(a, b)
+
+```
+
+This way, the code is clearer and easier to follow.
+
+---
+
+**4.0 Indentation**
+
+In Python, indentation is used to define the structure and flow of the code. Unlike other programming languages such as C or Java, which use curly braces `{}` to define code blocks, Python relies on indentation (whitespace) to group statements together. This makes the code visually clear and easy to read.
+
+- Key Points about Python Indentation:
+1. Indentation Level: Typically, 4 spaces per indentation level are recommended.
+2. Colon (`:`): A colon at the end of a line indicates that an indented block of code will follow.
+3. Consistency: Consistent use of spaces or tabs is crucial. Mixing spaces and tabs can lead to errors.
+- Example: if-else Block
+
+Here is an example using an `if-else` block to demonstrate indentation:
+
+```python
+age = 20
+
+if age >= 18:
+    print("You are an adult.")  # This line is indented
+    print("You can vote.")      # This line is also indented
+else:
+    print("You are a minor.")  # This line is indented
+    print("You cannot vote.")  # This line is also indented
+```
+
+- Explanation:
+1. `if age >= 18:`: This line ends with a colon, indicating that the following indented lines belong to the `if` block.
+2. Indented Lines: The two `print` statements under the `if` condition are indented, making them part of the `if` block.
+3. `else:`: Similarly, the `else` statement ends with a colon.
+4. Indented Lines: The two `print` statements under the `else` condition are indented, making them part of the `else`block.
+
+- **Example: for Loop**
+
+Here's an example using a `for` loop to demonstrate how indentation works in loops:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers:
+    print(f"Number: {number}")
+    if number % 2 == 0:
+        print("Even number")
+    else:
+        print("Odd number")
+```
+
+- Explanation:
+1. `for number in numbers:`: This line ends with a colon, indicating that the following indented lines belong to the `for` loop.
+2. Indented Lines: The `print` statement and the `if-else` block inside the loop are indented, making them part of the `for` loop.
+3. Nested Indentation: Inside the `if-else` block, the statements are further indented to indicate that they belong to the respective condition.
+- Example: Function Definition
+
+Here’s an example with a function definition to illustrate indentation in functions:
+
+```python
+def greet(name):
+    print(f"Hello, {name}!")  # Indented block inside the function
+    if name == "Alice":
+        print("Welcome back, Alice!")
+    else:
+        print("Nice to meet you!")
+
+greet("Alice")
+greet("Bob")
+```
+
+Explanation:
+
+1. `def greet(name):`: This line defines a function and ends with a colon.
+2. Indented Lines: The `print` statement and the `if-else` block inside the function are indented, making them part of the function definition.
+3. Nested Indentation: Inside the `if-else` block, the statements are further indented to indicate that they belong to the respective condition.
+- Summary:
+1. Indentation: Python uses indentation (usually 4 spaces) to define blocks of code.
+2. Colon (`:`): A colon at the end of a line indicates that an indented block of code follows.
+3. Consistency: Use consistent indentation to avoid errors and improve code readability.
+
+By using indentation effectively, Python ensures that the code is clean, readable, and logically structured.
+
+## Python Statements
+____
+
+A statement is an instruction that a Python interpreter can execute. Learn simple statements and compound statements.
+
+**Table of contents**
+
+- Python Compound Statements
+- Simple Statements
+    - Expression statements
+    - The pass statement
+    - The del statement
+    - The return statement
+    - The import statement
+    - The continue and break statement
+
+    #### **1.0 What is a statement in Python**
+    ---
+
+    A **statement is an instruction that a Python interpreter can execute**. So, in simple words, we can say anything written in Python is a statement.  Python statement ends with the token NEWLINE character. It means each line in a Python script is a statement.
+
+    For example, `a = 10` is an assignment statement. where `a` is a variable name and 10 is its value. There are other kinds of statements such as `if` statement, `for` statement, `while`statement, etc.
+
+    There are mainly four types of statements in Python,
+
+    1. print statements,
+    2. Assignment statements, 
+    3. Conditional statements, 
+    4. Looping statements.
+
+    The print and assignment statements are commonly used. The result of a print statement is a value. Assignment statements don’t produce a result it just assigns a value to the operand on its left side. A Python script usually contains a sequence of statements. If there is more than one statement, the result appears only one time when all statements execute.
+
+    ---
+
+    #### **2.0 Compound Statements**
+
+    [Compound statements](https://docs.python.org/3/reference/compound_stmts.html) contain (groups of) other statements; they affect or control the execution of those other statements in some way.
+
+    The compound statement includes the conditional and loop statement.
+
+    - `if` statement: It is a [control flow statement](https://pynative.com/python-control-flow-statements/) that will execute statements under it if the condition is true. Also kown as a conditional statement.
+    - `while` statements: The [while loop](https://pynative.com/python-while-loop/) statement repeatedly executes a code block while a particular condition is true. Also known as a looping statement.
+    - `for` statement: Using [for loop](https://pynative.com/python-for-loop/) statement, we can iterate any sequence or iterable variable. The sequence can be string, list, dictionary, set, or tuple. Also known as a looping statement.
+    - `try` statement: specifies [exception handlers](https://pynative.com/python-exceptions/).
+    - `with` statement: Used to cleanup code for a group of statements, while the with statement allows the execution of initialization and finalization code around a block of code.
+
+    ---
+
+    #### 3.0  **Simple Statements**
+
+    There are various types of simple statement in Python, Python has various [simple statements](https://docs.python.org/3/reference/simple_stmts.html) for a specific purpose. Namely
+
+    1. Expression statements
+    2. The pass statement
+    3. The del statement
+    4. The return statement
+    5. The import statement
+    6. The continue and break statement
+
+    **1.0 Expression statements**
+
+    This is a simple statement that assign a value to a variable.  But in a script, an expression all by itself doesn’t do anything! So we mostly assign an expression to a variable, which becomes a statement for an interpreter to execute.
+
+    ```python
+    x = 5
+    # right hand side of = is a expression statement
+
+    # y = x + 10 is a complete statement
+    y = x + 10
+    ```
+
+    **2.0 The `pass` statement**
+
+    `pass` is a null operation. Nothing happens when it executes. It is useful as a placeholder when a statement is required syntactically, but no code needs to be executed.
+
+    For example, you created a [function](https://pynative.com/python-functions/) for future releases, so you don’t want to write a code now. In such cases, we can use a `pass` statement.
+
+    **Example**:
+
+    ```python
+    # create a function
+    def fun1(arg):
+        pass  # a function that does nothing (yet)
+    ```
+
+    3.0 **The `del` statement**
+
+    The Python `del` statement is used to delete objects/variables.
+
+    **Syntax**:
+
+    ```python
+    del target_list
+    ```
+
+    The `target_list` contains the variable to delete separated by a comma. Once the variable is deleted, we can’t access it.
+
+    ```python
+    x = 10
+    y = 30
+    print(x, y)
+
+    # delete x and y
+    del x, y
+
+    # try to access it
+    print(x, y)
+    ```
+
+    ```
+    10 30
+    NameError: name 'x' is not defined
+    ```
+
+    **4.0 The `return` statement**
+
+    We create a function in Python to perform a specific task. The function can return a value that is nothing but an output of function execution.
+
+    Using a `return` statement, we can return a value from a function when called.
+
+    Example:
+
+    ```python
+    # Define a function
+    # function accepts two numbers and return their sum
+
+    def addition(num1, num2):
+        return num1 + num2  # return the sum of two numbers
+
+    # result is the return value
+    result = addition(10, 20)
+    print(result)
+
+    # Output
+    30
+    ```
+
+    **5.0 The `import` statement**
+
+    The import statement is used to import [modules](https://pynative.com/python-modules/). We can also import individual classes from a module. Python has a huge list of built-in modules which we can use in our code. For example, we can use the built-in module [DateTime](https://pynative.com/python/datetime/) to work with date and time.
+
+    ```python
+    import datetime
+
+    # get current datetime
+    now = datetime.datetime.now()
+    print(now)
+
+    # Output
+    2021-08-30 18:30:33.103945
+    ```
+
+    **6.0 The continue and break statement**
+
+    - `break` Statement: The break statement is used inside the loop to exit out of the loop.
+    - `continue` Statement: The continue statement skip the current iteration and move to the next iteration.
+
+
