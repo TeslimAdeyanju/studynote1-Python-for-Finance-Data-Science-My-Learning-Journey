@@ -1,4 +1,4 @@
-import 
+import test_module
 
 # access first city
 city = test_module.cities_list[1]
