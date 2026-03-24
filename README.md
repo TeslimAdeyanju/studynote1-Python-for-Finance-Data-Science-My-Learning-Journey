@@ -1,10 +1,10 @@
-# 🐍 Python Learning Journey
+# Python Learning Journey
 
 A comprehensive repository documenting my journey through Python programming, from fundamentals to advanced data science concepts.
 
 <a href="https://wakatime.com/badge/github/TeslimAdeyanju/1-Mainclass-Python-Language"><img src="https://wakatime.com/badge/github/TeslimAdeyanju/1-Mainclass-Python-Language.svg" alt="wakatime"></a>
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Repository Structure](#repository-structure)
@@ -14,21 +14,21 @@ A comprehensive repository documenting my journey through Python programming, fr
 - [Getting Started](#getting-started)
 - [Progress Tracking](#progress-tracking)
 
-## 🎯 Overview
+## Overview
 
 This repository serves as a complete documentation of my Python learning experience, covering everything from basic syntax to advanced data science applications. It includes coursework from DataCamp, personal projects, and comprehensive notes on various Python concepts.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ### 1. DataCamp Course Materials (`1-python-Datacamp/`)
 Complete coursework and projects from DataCamp's Python track:
 
-- **📊 Data Science Projects**
+- ** Data Science Projects**
   - Netflix Data Analysis Project
   - NYC Schools Analysis
   - Exploratory Data Analysis exercises
 
-- **📚 Course Modules**
+- ** Course Modules**
   - Introduction to Python
   - Intermediate Python
   - Data Manipulation with pandas
@@ -49,7 +49,7 @@ Fundamental Python programming concepts organized by topic:
   - Methods and Functions
   - Input/Output Functions
 
-- **🏗️ Advanced Topics**
+- ** Advanced Topics**
   - Object-Oriented Programming
   - Modules and Packages
   - Exception Handling and Error Management
@@ -73,7 +73,7 @@ Hands-on projects demonstrating practical application of learned concepts:
 - Categorical data visualization
 - Statistical plotting techniques
 
-## 🎓 Learning Path
+## Learning Path
 
 ### Phase 1: Foundation Building
 1. **Python Basics** - Syntax, variables, data types
@@ -95,24 +95,24 @@ Hands-on projects demonstrating practical application of learned concepts:
 2. **Statistical analysis** - Exploratory data analysis
 3. **Machine learning** - Introduction to ML concepts
 
-## 🚀 Key Projects
+## Key Projects
 
-### 📺 Netflix Data Analysis
+### Netflix Data Analysis
 - **Objective**: Analyze Netflix movies and series data from the 1990s
 - **Skills**: Data cleaning, exploratory data analysis, visualization
 - **Dataset**: `netflix_data.csv` with comprehensive movie metadata
 
-### 🏫 NYC Schools Analysis  
+### NYC Schools Analysis  
 - **Objective**: Educational data analysis and insights
 - **Skills**: Statistical analysis, data interpretation
 - **Dataset**: NYC public schools performance data
 
-### 🤖 Machine Learning Experiments
+### Machine Learning Experiments
 - **Objective**: Practical application of ML concepts
 - **Tools**: OpenML, scikit-learn basics
 - **Focus**: Understanding data science workflow
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Core**: Python 3.x
 - **Data Analysis**: Pandas, NumPy
@@ -120,7 +120,7 @@ Hands-on projects demonstrating practical application of learned concepts:
 - **Development**: Jupyter Notebooks
 - **Data Formats**: CSV, Excel, SQLite, HDF5, SAS, Stata, MATLAB
 
-## 🏃‍♂️ Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -155,18 +155,18 @@ jupyter notebook
 - Progress to `1-python-Datacamp/` for structured learning
 - Explore `5-Python-Projects/` for practical applications
 
-## 📈 Progress Tracking
+## Progress Tracking
 
-- ✅ **Python Fundamentals** - Completed
-- ✅ **Data Structures** - Completed  
-- ✅ **Object-Oriented Programming** - Completed
-- ✅ **NumPy & Pandas** - Completed
-- ✅ **Data Visualization** - Completed
-- ✅ **Statistical Analysis** - In Progress
-- 🔄 **Machine Learning** - Learning
-- 📋 **Advanced Projects** - Planned
+- **Python Fundamentals** - Completed
+- **Data Structures** - Completed  
+- **Object-Oriented Programming** - Completed
+- **NumPy & Pandas** - Completed
+- **Data Visualization** - Completed
+- **Statistical Analysis** - In Progress
+- **Machine Learning** - Learning
+- **Advanced Projects** - Planned
 
-## 📝 Notes
+## Notes
 
 This repository represents an ongoing learning journey. Each folder contains detailed notes, code examples, and practical exercises. The structure is designed to facilitate both sequential learning and quick reference lookup.
 
