@@ -1,0 +1,4 @@
+User logged in at 09:00
+User viewed dashboard at 09:05
+User logged in at 2026-04-15 09:00
+User logged in at 2026-04-15 09:00
