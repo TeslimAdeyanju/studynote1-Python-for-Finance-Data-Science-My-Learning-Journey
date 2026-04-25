@@ -1,0 +1,3 @@
+Monday: Math
+Tuesday: Science
+Wednesday: History
