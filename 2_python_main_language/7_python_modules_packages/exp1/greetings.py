@@ -1,7 +1,32 @@
 # greetings.py
+"""
+Greetings Module
+================
 
+This module provides functions for creating personalized greetings.
+
+Functions:
+    say_hello(name): Returns a hello message
+    say_goodbye(name): Returns a goodbye message
+    get_greeting_stats(): Returns module statistics
+
+Author: Your Name
+Version: 1.0.0
+"""
 def say_hello(name):
-    """Return a personalized greeting."""
+    """
+    Generate a personalized hello message.
+
+    Args:
+        name (str): The person's name
+
+    Returns:
+        str: A formatted greeting message
+
+    Example:
+        >>> say_hello("Alice")
+        'Hello, Alice! Welcome to Python modules!'
+    """
     return f"Hello, {name}! Welcome to Python modules!"
 
 def say_goodbye(name):
